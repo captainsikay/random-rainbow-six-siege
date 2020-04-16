@@ -1,1 +1,16 @@
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet> -->
+
+<div class="gallery">
+  <div class="item">
+    <div class="operator">
+      <img class="operator_img" [src]="operator.img" />
+      <img class="operator_icon" [src]="operator.icon" />
+      <span>{{ operator.name }}</span>
+    </div>
+  </div>
+</div>
+
+<div class="controls">
+  <button (click)="onRandomSelect('attacker')">Select Random Attacker</button>
+  <button (click)="onRandomSelect('defender')">Select Random Defender</button>
+</div>

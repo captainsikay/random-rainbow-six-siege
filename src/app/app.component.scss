@@ -1,0 +1,90 @@
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 0;
+  line-height: 0;
+  overflow: visible;
+  padding: 40px;
+
+  .item {
+    background-color: rgb(12, 13, 14);
+    border-top-color: rgb(83, 89, 104);
+    border-right-color: rgb(83, 89, 104);
+    border-bottom-color: rgb(83, 89, 104);
+    border-left-color: rgb(83, 89, 104);
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .operator {
+      overflow: hidden;
+
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .operator_img {
+      // width: 100%;
+      // max-width: 100%;
+      width: 200px;
+      height: auto;
+      vertical-align: middle;
+      background: transparent;
+    }
+
+    .operator_icon {
+      display: block;
+      position: absolute;
+      top: 55%;
+      right: auto;
+      left: 50%;
+      bottom: auto;
+      margin: 0 -25%;
+      width: 50%;
+      height: auto;
+      background: transparent;
+    }
+
+    span {
+      text-align: center;
+      letter-spacing: 0;
+      color: rgb(255, 255, 255);
+      background-color: rgb(55, 58, 60);
+      text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
+      position: relative;
+      left: 0;
+      bottom: 0;
+      margin: 0;
+      padding: 5px 0 10px;
+      width: 100%;
+      font-size: 26px;
+      font-size: 1.625rem;
+      line-height: 20px;
+      line-height: 1.25rem;
+      letter-spacing: 0;
+      font-family: R6S-Light, sans-serif;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: #fff;
+      background-color: #333740;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+      transition: background-color 0.3s ease;
+    }
+  }
+}
+
+.controls {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  button {
+    padding: 8px;
+    margin: 4px;
+  }
+}
