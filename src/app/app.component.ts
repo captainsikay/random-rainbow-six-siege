@@ -28,7 +28,7 @@ export class AppComponent {
       for (let i = 0; i < 20; i++) {
         const randomOperator = Math.floor(Math.random() * this.def.length);
         setTimeout(() => {
-          this.operator = this.att[randomOperator];
+          this.operator = this.def[randomOperator];
         }, 100 * i);
       }
     }
